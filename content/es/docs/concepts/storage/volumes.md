@@ -25,7 +25,7 @@ Kubernetes destruye los volúmenes efímeros; sin embargo, Kubernetes no destruy
 
 En su núcleo, un volumen es un directorio, posiblemente con algunos datos en este, que puede ser accesible para los contenedores en un Pod. Cómo ese directorio llega a crearse, el medio que lo respalda, y el contenido de este se determinan por el tipo de volumen usado.
 
-Para usar un volumen, especifica los volúmenes a proveer al por en `.spec.volumes` y declara
+Para usar un volumen, especifica los volúmenes a proveer al Pod en `.spec.volumes` y declara
 dónde montar estos volúmenes dentro de los contenedores en `.spec.containers[*].volumeMounts`.
 Un proceso en el contenedor observa una vista del sistema de archivos compuesta por la imagen Docker y volúmenes.
 La [imagen Docker](https://docs.docker.com/userguide/dockerimages/) está en la raíz de la jerarquía del sistema de archivos.
